@@ -13,6 +13,8 @@ Console.WriteLine($"{AddressA.Letter} {AddressA.Money}");
 Console.WriteLine(AddressB);
 Console.WriteLine(AddressC);
 
+
+// 뱌열
 GiftBox[] giftBoxes = new GiftBox[3];
 giftBoxes[0] = AddressA;
 giftBoxes[1] = AddressB;
@@ -23,10 +25,29 @@ Console.WriteLine(giftBoxes.Length);
 GiftBox[] giftBoxes2 = { AddressA, AddressB, AddressC, AddressD, AddressE };
 Console.WriteLine(giftBoxes2.Length);
 
+// 리스트
+List<GiftBox> giftBoxList = new List<GiftBox>();
+giftBoxList.Add(AddressA);
+giftBoxList.Add(AddressB);
+giftBoxList.Add(AddressC);
+giftBoxList.Add(AddressD);
+giftBoxList.Add(AddressE);
+
+giftBoxList[0] = AddressA;
+giftBoxList[0] = AddressB;
+giftBoxList[0] = AddressC;
+giftBoxList[0] = AddressD;
+giftBoxList[0] = AddressE;
+
+// giftBoxList.Clear(); // 모두 지움
+// giftBoxList.Remove(AddressD); // 지정 지움
+Console.WriteLine(giftBoxList.Count);
 
 
+// 함수 생성
 GiftBox GiftBoxMaker(string letter, int money)
 {
+  // 인스턴스 생성
   GiftBox Box = new GiftBox()
   {
     Letter = letter,
