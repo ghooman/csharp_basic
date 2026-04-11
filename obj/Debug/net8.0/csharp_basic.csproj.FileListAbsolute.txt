@@ -1,0 +1,15 @@
+/Users/ghoo/Desktop/Practice/csharp_basic/bin/Debug/net8.0/csharp_basic
+/Users/ghoo/Desktop/Practice/csharp_basic/bin/Debug/net8.0/csharp_basic.deps.json
+/Users/ghoo/Desktop/Practice/csharp_basic/bin/Debug/net8.0/csharp_basic.runtimeconfig.json
+/Users/ghoo/Desktop/Practice/csharp_basic/bin/Debug/net8.0/csharp_basic.dll
+/Users/ghoo/Desktop/Practice/csharp_basic/bin/Debug/net8.0/csharp_basic.pdb
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.AssemblyInfoInputs.cache
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.AssemblyInfo.cs
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.csproj.CoreCompileInputs.cache
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.sourcelink.json
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.dll
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/refint/csharp_basic.dll
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.pdb
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/csharp_basic.genruntimeconfig.cache
+/Users/ghoo/Desktop/Practice/csharp_basic/obj/Debug/net8.0/ref/csharp_basic.dll
