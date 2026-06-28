@@ -7,7 +7,7 @@ class GiftBoxManager
     GiftBox AddressB = GiftBoxMaker("B 친구야 잘 지내니?", 200000, ITEM_GRADE.RARE);
     GiftBox AddressC = GiftBoxMaker("C 친구야 잘 지내니?", 300000, ITEM_GRADE.UNIQUE);
     GiftBox AddressD = GiftBoxMaker("D 친구야 잘 지내니?", 400000, ITEM_GRADE.NORMAL);
-    GiftBox AddressE = GiftBoxMaker("E 친구야 잘 지내니?", 500000, ITEM_GRADE.RARE);
+    GiftBox AddressE = GiftBoxMaker("E 친구야 잘  지내니?", 500000, ITEM_GRADE.RARE);
   }
 
   // 함수 생성
