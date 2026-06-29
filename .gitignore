@@ -10,5 +10,8 @@ obj/
 # Rider / IDE
 .idea/
 
+# Claude Code (로컬 도구 설정)
+.claude/
+
 # macOS
 .DS_Store
