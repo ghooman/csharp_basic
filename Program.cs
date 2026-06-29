@@ -80,51 +80,51 @@ Console.WriteLine("시작 부분!");
 // }
 
 // Contains, Replace, Trim, ToLower, SubString, IndexOf, Split
-string letter = " 친구야 잘 지내니? ";
-bool isContains = letter.Contains("지내");
-Console.WriteLine("Contains : " + isContains);
+// string letter = " 친구야 잘 지내니? ";
+// bool isContains = letter.Contains("지내");
+// Console.WriteLine("Contains : " + isContains);
 
-string replace = letter.Replace("친구", "문송이야");
-Console.WriteLine("Replace : " + replace);
+// string replace = letter.Replace("친구", "문송이야");
+// Console.WriteLine("Replace : " + replace);
 
-string trim = letter.Trim();
-Console.WriteLine("Trim : " + trim);
+// string trim = letter.Trim();
+// Console.WriteLine("Trim : " + trim);
 
-string letterEn = "Hi my friend";
-string toLower = letterEn.ToLower();
-string toUpper = letterEn.ToUpper();
-Console.WriteLine("ToLower : " + toLower);
-Console.WriteLine("ToUpper : " + toUpper);
+// string letterEn = "Hi my friend";
+// string toLower = letterEn.ToLower();
+// string toUpper = letterEn.ToUpper();
+// Console.WriteLine("ToLower : " + toLower);
+// Console.WriteLine("ToUpper : " + toUpper);
 
-string substring = letter.Substring(0, 3);
-string substring2 = letter[2..3];
+// string substring = letter.Substring(0, 3);
+// string substring2 = letter[2..3];
 
-Console.WriteLine("Substring : " + substring);
-Console.WriteLine("Substring2 : " + substring2);
+// Console.WriteLine("Substring : " + substring);
+// Console.WriteLine("Substring2 : " + substring2);
 
-int indexOf = letter.IndexOf("잘");
-Console.WriteLine("IndexOf : " + indexOf);
+// int indexOf = letter.IndexOf("잘");
+// Console.WriteLine("IndexOf : " + indexOf);
 
-string friends = "재현,호민,재호/여진,민재,호동";
-// 0 재현,호민,재호
-// 1 여진,민재,호동
-string[] arrGroup = friends.Split('/');
-foreach (var item in arrGroup)
-{
-  Console.WriteLine(item);
-  string[] arrFriend = item.Split(',');
-  Console.WriteLine("Split:");
-  // 0 재현
-  // 1 호민
-  // 2 재호
-  // 0 여진
-  // 1 민재
-  // 2 호동
-  foreach (var friend in arrFriend)
-  {
-    Console.WriteLine(friend);
-  }
-}
+// string friends = "재현,호민,재호/여진,민재,호동";
+// // 0 재현,호민,재호
+// // 1 여진,민재,호동
+// string[] arrGroup = friends.Split('/');
+// foreach (var item in arrGroup)
+// {
+//   Console.WriteLine(item);
+//   string[] arrFriend = item.Split(',');
+//   Console.WriteLine("Split:");
+//   // 0 재현
+//   // 1 호민
+//   // 2 재호
+//   // 0 여진
+//   // 1 민재
+//   // 2 호동
+//   foreach (var friend in arrFriend)
+//   {
+//     Console.WriteLine(friend);
+//   }
+// }
 
 
 // string.format, toString(), $, +, StringBuilder
@@ -189,7 +189,8 @@ Console.WriteLine("ToTimeStamp: " + dateTimeOffset.ToUnixTimeSeconds());
 Console.WriteLine("ToTimeStamp: " + dateTimeOffset.ToUnixTimeMilliseconds());
 
 // ToLocal
-Console.WriteLine("ToLocal: " + DateTimeOffset.FromUnixTimeSeconds(dateTimeOffset.ToUnixTimeMilliseconds()));
+Console.WriteLine("ToLocal: " + DateTimeOffset.FromUnixTimeSeconds(dateTimeOffset.ToUnixTimeSeconds()));
+Console.WriteLine("ToLocal: " + DateTimeOffset.FromUnixTimeSeconds(dateTimeOffset.ToUnixTimeSeconds()).ToLocalTime());
 
 // 원하는 형식 출력
 Console.WriteLine("원하는 형식 출력: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss z"));
@@ -207,3 +208,44 @@ Console.WriteLine(DateTime.Now.DayOfWeek);
 TimeSpan timeSpan = DateTime.Now - DateTime.Now.AddHours(232);
 Console.WriteLine("DateTime끼리 빼기: " + timeSpan.Hours); // 24시간이 넘어가는 값을 생략
 Console.WriteLine("DateTime끼리 빼기: " + timeSpan.TotalHours);
+
+
+// 산술연산자의 형변환 (+, -,*,/,%), 증감 연산자(x++, ++x)
+// 1. 산술연산자의 형변환 (+, -,*,/,%)
+// a 정수 + 실수 연산
+var value = 1 + 2.3f; // 정수와 실수 연산에서는 실수 위주로 연산이 된다.
+Console.WriteLine("정수 + 실수 연산: " + value);
+
+// b 실수 끼리 연산
+var value2 = 1.3f + 2.3d; // 실수의 연산에서는 큰 형식으로 자동 형변환 됨.
+Console.WriteLine("실수 끼리 연산: " + value2);
+
+// c 숫자 + 문자 연산
+Console.WriteLine("숫자 + 문자 연산: " + (1 + "문자")); // 숫자는 문자로 자동 형변환 됨.
+
+// d / 나눗셈의 목표
+int value3 = 10 / 3; // 정수끼리 나누면 정수 형식으로 나옴(몫만 나옴)
+Console.WriteLine(value3);
+var value4 = 10 / 3f; // 실수 형식으로 계산 됨.
+Console.WriteLine(value4);
+
+// e % 나머지 구하기
+Console.WriteLine("나머지 구하기: " + 6 % 5);
+
+// f 연산자 우선순위
+Console.WriteLine("연산자 우선순위: " + (2 + 5 * 4));
+
+// 2. 증감 연산자(x++, ++x)
+var value5 = 10;
+// value5 = value5 + 1;
+++value5;
+
+Console.WriteLine(value5);
+
+int index = 0;
+int[] arr = { 100, 200, 300 };
+Console.WriteLine(arr[index++]);
+Console.WriteLine(arr[index++]);
+Console.WriteLine(arr[index++]);
+
+
