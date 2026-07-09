@@ -249,3 +249,24 @@ Console.WriteLine(arr[index++]);
 Console.WriteLine(arr[index++]);
 
 
+
+// 관계 연산자(==, !=, >=, >), 논리연산자 (||, &&), 부정연산자 !, 할당연산자 +=
+// 1. 관계 연산자
+// a ==   두 값이 같으면 true
+Console.WriteLine(3 == 3);
+// b !=   두 값이 다르면 true
+Console.WriteLine(3 != 5);
+// c >=, <=   크거나같다 / 작거나같다
+Console.WriteLine(5 >= 5);
+Console.WriteLine(3 <= 2);
+// 2. 논리연산자
+// a &&   둘 다 true여야 true
+Console.WriteLine(true && false);
+// b ||   하나라도 true면 true
+Console.WriteLine(true || false);
+// 3. 부정연산자 !   true/false를 반대로 뒤집음
+Console.WriteLine(!true);
+// 4. 할당연산자 +=   기존 값에 더해서 다시 저장
+int score = 100;
+score += 50;
+Console.WriteLine(score);
